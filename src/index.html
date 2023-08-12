@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>
+            Hanno
+        </title>
+
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Rubik:wght@300;700&display=swap" rel="stylesheet">
+        <link href="./src/index.css" rel="stylesheet">
+        <link href="./src/ice.css" rel="stylesheet">
+        <link href="./src/about.css" rel="stylesheet">
+
+        <script src="https://kit.fontawesome.com/4f585a18fb.js" crossorigin="anonymous"></script>
+        <script src="./src/index.js" crossorigin="anonymous"> </script>
+    </head>
+
+    <body>
+
+        <main>
+
+            <header>
+                <h1>Hanno</h1>
+
+                <div class="blueprintSearch">
+                    <form>
+                        <input type="text" id="bpSearch"  name="bpInput" value="Search Blueprints" onfocus="this.value = ''" onblur="this.value = 'Search Blueprints'"/>
+                    </form>
+                </div>
+            </header>
+
+            
+
+            <section class="navAndCalc">
+                <nav>
+
+                    <div class="hannoNav">
+
+                        <ul>
+                            <li id="oreClick"><i class="fa-solid fa-industry"></i>Ore</li>
+                            <li id="iceClick"><i class="fa-solid fa-gem"></i>Ice</li>
+                            <li id="apiClick"><i class="fa-solid fa-gear"></i>API</li>
+                            <li id="aboutClick"><i class="fa-solid fa-book"></i>About</li>
+                        </ul>
+
+                    </div>
+
+                </nav>
+
+                <form id="iceContainer" class="tabHidden">
+
+                    <div class="refineContainer">
+                        <h2>Refine Settings</h2>
+                        <section class="oreRefineForm" method="get" id="refineForm">
+                        <div class="refineSkills">
+                            <div class="refineStructure">
+                                <label for="structureSelect">Structure</label>
+                                <select id="structure" name="structureSelect">
+                                    <option>Athanor</option>
+                                    <option>Tatara</option>
+                                    <option>NPC/Other Structure</option>
+                                </select>
+                            </div>
+
+                            <div class="refineRig">
+                                <label for="rigSelect">Rig</label>
+                                <select id="rigs" name="rigSelect">
+                                    <option>No Rig</option>
+                                    <option>T1 Rig</option>
+                                    <option>T2 Rig</option>
+                                </select>
+                            </div>
+
+                            <div class="refineSecurity">
+                                <label for="securitySelect">Security</label>
+                                <select id="security" name="securitySelect">
+                                    <option>High-Sec</option>
+                                    <option>Low-Sec</option>
+                                    <option>Null-Sec</option>
+                                    <option>J-Space</option>
+                                </select>
+                            </div>
+                        </div>
+                            <div class="refineSkills">
+                                <div class="refineSkillSelect">
+                                    <label for="reprocessingSelect">Reprocessing Skill</label>
+                                    <select id="skills" name="reprocessingSelect">
+                                        <option>Reprocessing V</option>
+                                        <option>Reprocessing IV</option>
+                                        <option>Reprocessing III</option>
+                                        <option>Reprocessing II</option>
+                                        <option>Reprocessing I</option>
+                                    </select>
+                                </div>
+
+                                <div class="refineSkillSelect">
+                                    <label for="efficiencySelect">Efficiency Skill</label>
+                                    <select id="skills" name="efficiencySelect">
+                                        <option>Reprocessing Efficiency V</option>
+                                        <option>Reprocessing Efficiency IV</option>
+                                        <option>Reprocessing Efficiency III</option>
+                                        <option>Reprocessing Efficiency II</option>
+                                        <option>Reprocessing Efficiency I</option>
+                                    </select>
+                                </div>
+
+                                <div class="refineSkillSelect">
+                                    <label for="oreProcessingSelect">Ore Processing Skill</label>
+                                    <select id="skills" name="oreProcessingSelect">
+                                        <option>Ore Processing V</option>
+                                        <option>Ore Processing IV</option>
+                                        <option>Ore Processing III</option>
+                                        <option>Ore Processing II</option>
+                                        <option>Ore Processing I</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                        </section>
+                    </div>
+
+                    <div class="iceCalculator">
+                        <h2>Calculator</h2>
+                        <section id="iceInputContainer">
+                            <div class="iceForm">
+                                <div class="iceInput">
+                                    <label for="heavyInput">Heavy Water</label>
+                                    <input id="heavywater" type="text" name="heavyInput" value="0" onfocus="this.value = ''"/>
+                                </div>
+                                <div class="iceInput">
+                                    <label for="ozoneInput">Liquid Ozone</label>
+                                    <input id="ozone" type="text" name="ozoneInput" value="0" onfocus="this.value = ''"/>
+                                </div>
+                                <div class="iceInput">
+                                    <label for="heliumInput">Helium Isotopes</label>
+                                    <input id="helium" type="text" name="heliumInput" value="0" onfocus="this.value = ''"/>
+                                </div>
+                                <div class="iceInput">
+                                    <label for="strontInput">Strontium Clathrates</label>
+                                    <input id="strontium" type="text" name="strontInput" value="0" onfocus="this.value = ''"/>
+                                </div>
+                                <div class="iceInput">
+                                    <label for="hydInput">Hydrogen Isotopes</label>
+                                    <input id="hydrogen" type="text" name="hydInput" value="0" onfocus="this.value = ''"/>
+                                </div>
+                                <div class="iceInput">
+                                    <label for="oxyInput">Oxygen Isotopes</label>
+                                    <input id="oxygen" type="text" name="oxyInput" value="0" onfocus="this.value = ''"/>
+                                </div>
+                                <div class="iceInput">
+                                    <label for="nitInput">Nitrogen Isotopes</label>
+                                    <input id="nitrogen" type="text" name="nitInput" value="0" onfocus="this.value = ''"/>
+                                </div>
+                            </div>
+
+                            <div class="oreOutput">
+                                <label>Output</label>
+                                <textarea id="iceOutput">Outputs a list of compressed ice that are linearly optimized for price.</textarea>
+
+                                <div class="oreSubmit">
+                                    <button id="hannoIceSubmit">Submit</button>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </form>
+
+                <section id="apiContainer" class="tabHidden">
+                    <h2>API</h2>
+                </section>
+
+                <section id="aboutContainer" class="tabHidden">
+                    <div class="aboutHold">
+                    <p>Special thank you to Orange, LiteralGarbage and all of
+                    <a target="_blank" href="https://www.reddit.com/r/evejobs/comments/153lrqa/zoldyck_solutions_your_solution/">Zoldyck Solutions</a>
+                    for the help in making this web app.</p>
+                    <p>Built using vanilla javascript, nodeJS and linear optimization is handled using
+                    <a target="_blank" href="https://github.com/JWally/jsLPSolver">JWallys jsLPSolver</a></p>
+                    <p>Built and coded by Gh0st9626. Basic boring copyright to eve.</p>
+                    </div>
+                </section>
+
+                <form method="post" id="oreContainer" class="tabActive">
+                    
+                    <div class="refineContainer">
+                        <h2>Refine Settings</h2>
+                        <section class="oreRefineForm" method="get" id="refineForm">
+                        <div class="refineSkills">
+                            <div class="refineStructure">
+                                <label for="structureSelect">Structure</label>
+                                <select id="structure" name="structureSelect">
+                                    <option>Athanor</option>
+                                    <option>Tatara</option>
+                                    <option>NPC/Other Structure</option>
+                                </select>
+                            </div>
+
+                            <div class="refineRig">
+                                <label for="rigSelect">Rig</label>
+                                <select id="rigs" name="rigSelect">
+                                    <option>No Rig</option>
+                                    <option>T1 Rig</option>
+                                    <option>T2 Rig</option>
+                                </select>
+                            </div>
+
+                            <div class="refineSecurity">
+                                <label for="securitySelect">Security</label>
+                                <select id="security" name="securitySelect">
+                                    <option>High-Sec</option>
+                                    <option>Low-Sec</option>
+                                    <option>Null-Sec</option>
+                                    <option>J-Space</option>
+                                </select>
+                            </div>
+                        </div>
+                            <div class="refineSkills">
+                                <div class="refineSkillSelect">
+                                    <label for="reprocessingSelect">Reprocessing Skill</label>
+                                    <select id="skills" name="reprocessingSelect">
+                                        <option>Reprocessing V</option>
+                                        <option>Reprocessing IV</option>
+                                        <option>Reprocessing III</option>
+                                        <option>Reprocessing II</option>
+                                        <option>Reprocessing I</option>
+                                    </select>
+                                </div>
+
+                                <div class="refineSkillSelect">
+                                    <label for="efficiencySelect">Efficiency Skill</label>
+                                    <select id="skills" name="efficiencySelect">
+                                        <option>Reprocessing Efficiency V</option>
+                                        <option>Reprocessing Efficiency IV</option>
+                                        <option>Reprocessing Efficiency III</option>
+                                        <option>Reprocessing Efficiency II</option>
+                                        <option>Reprocessing Efficiency I</option>
+                                    </select>
+                                </div>
+
+                                <div class="refineSkillSelect">
+                                    <label for="oreProcessingSelect">Ore Processing Skill</label>
+                                    <select id="skills" name="oreProcessingSelect">
+                                        <option>Ore Processing V</option>
+                                        <option>Ore Processing IV</option>
+                                        <option>Ore Processing III</option>
+                                        <option>Ore Processing II</option>
+                                        <option>Ore Processing I</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                        </section>
+                    </div>
+
+                    <div class="calculator">
+                        <h2>Calculator</h2>
+                        <section class="oreCalcForm" id="minForm">
+                            <div class="mineralForm">
+                                <div class="mineralInput">
+                                    <label for="triInput">Tritanium</label>
+                                    <input id="tritanium" type="text" name="triInput" value="0" onfocus="this.value = ''"/>
+                                </div>
+                                <div class="mineralInput">
+                                    <label for="pyeInput">Pyerite</label>
+                                    <input id="pyerite" type="text" name="pyeInput" value="0" onfocus="this.value = ''"/>
+                                </div>
+                                <div class="mineralInput">
+                                    <label for="mexInput">Mexallon</label>
+                                    <input id="mexallon" type="text" name="mexInput" value="0" onfocus="this.value = ''"/>
+                                </div>
+                                <div class="mineralInput">
+                                    <label for="isoInput">Isogen</label>
+                                    <input id="isogen" type="text" name="isoInput" value="0" onfocus="this.value = ''"/>
+                                </div>
+                                <div class="mineralInput">
+                                    <label for="nocInput">Nocxium</label>
+                                    <input id="nocxium" type="text" name="nocInput" value="0" onfocus="this.value = ''"/>
+                                </div>
+                                <div class="mineralInput">
+                                    <label for="zydInput">Zydrine</label>
+                                    <input id="zydrine" type="text" name="zydInput" value="0" onfocus="this.value = ''"/>
+                                </div>
+                                <div class="mineralInput">
+                                    <label for="megInput">Megacyte</label>
+                                    <input id="megacyte" type="text" name="megInput" value="0" onfocus="this.value = ''"/>
+                                </div>
+                                <div class="mineralInput">
+                                    <label for="morInput">Morphite</label>
+                                    <input id="morphite" type="text" name="morInput" value="0" onfocus="this.value = ''"/>
+                                </div>
+                            </div>
+
+                            <div class="oreOutput">
+                                <label>Output</label>
+                                <textarea spellcheck="false" id="oreOutput">Outputs a list of compressed ores that are linearly optimized for price.</textarea>
+
+            
+                                <div class="oreSubmit">
+                                    <button id="hannoOreSubmit">Submit</button>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </form>
+            </section>
+        </main>
+
+    </body>
+
+</html>
